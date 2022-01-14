@@ -1,0 +1,26 @@
+.login_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.login_header h1 {
+    font-size: 60px;
+}
+
+.login_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login_main form {
+    width: 400px;
+}
+
+.login_btn {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
