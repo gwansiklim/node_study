@@ -3,7 +3,6 @@ const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const cors = require('cors');
 const nunjucks = require('nunjucks');
-// const Editor = require('@toast-ui/editor');
 
 require('dotenv').config();
 

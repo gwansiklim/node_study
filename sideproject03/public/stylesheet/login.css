@@ -15,10 +15,9 @@
     justify-content: center;
     align-items: center;
 }
-.login_main form {
+.login_main section {
     width: 400px;
 }
-
 .login_btn {
     display: flex;
     justify-content: space-between;

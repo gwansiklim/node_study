@@ -20,14 +20,13 @@ router.post("/", async (req, res) => {
                 email, password: cryptoPass
                 }
         });
-        console.log("로그인", user);
         if(!user) {
             res.status(400).send({
                 errorMessage: "이메일 또는 비밀번호가 잘못되었습니다."
             });
             return;
     }
-    const token = jwt.sign({userId: user.userId }, process.env.MY_SECRET, {expiresIn: "1d"});
+    const token = jwt.sign({userId: user.userId }, process.env.MY_SECRET);
     res.status(200).send({token});
 
     } catch (error) {

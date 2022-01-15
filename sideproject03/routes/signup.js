@@ -12,7 +12,7 @@ const signupSchema = Joi.object({
     password: Joi.string().required(),
 })
 
-router.post("/", async (req, res) => {
+router.post("/user", async (req, res) => {
     try {
         // req.body
         const { email, nickname, password} = await signupSchema.validateAsync(req.body);
@@ -41,7 +41,7 @@ router.post("/", async (req, res) => {
         await Users.create({
             email, nickname, password: cryptoPass
         })
-        res.status(201).send({});
+        res.status(200).send({});
 
     } catch (error) {
         console.log(`${req.method} ${req.originalUrl} : ${error.message}`);
