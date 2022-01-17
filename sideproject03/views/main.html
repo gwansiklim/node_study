@@ -25,31 +25,12 @@
     button {
         width: 200px;
         height: 40px;
+        margin-top: 50px;
     }
 </style>
 
 <body>
-    <div id="editor"></div>
-    <div id="contents"></div>
-    <button onclick="addHtml()">html보기</button>
-    <button onclick="addmarkup()">markup보기</button>
-    <div class="gethtml"></div>
-
-    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
-    <script>
-        const Editor = toastui.Editor;
-            const editor = new Editor({
-                el: document.querySelector('#editor'),
-                height: '500px', initialEditType: 'markdown', previewStyle: 'vertical'
-            })
-
-            function addHtml() {
-                document.querySelector(".gethtml").insertAdjacentHTML('afterbegin', editor.getHTML());
-            }
-            function addmarkup() {
-                document.querySelector(".gethtml").insertAdjacentHTML('afterbegin', editor.getMarkdown());
-            }
-    </script>
+    <button onclick="location.href='/post'">사용 하러 가기</button>
 </body>
 
 </html>

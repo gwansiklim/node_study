@@ -38,6 +38,10 @@ app.get("/main", (req, res) => {
     res.render("main");
 })
 
+app.get("/post", (req, res) => {
+    res.render("post");
+})
+
 app.listen(port, () => {
     console.log(`서버 접속 http://localhost:${port}`)
 })
